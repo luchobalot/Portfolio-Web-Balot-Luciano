@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Desarrollador Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>&lt;Luciano Balot/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hola, soy <span class="highlight">Luciano Nicolas Balot</span>
+            </h1>
+            <p class="hero-subtitle">
+                Desarrollador Web especializado en el Front-End, con conocimientos en React y JavaScript, y experiencia complementaria en tecnologías Back-End en .NET y Java.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contacto</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Tengo 23 años y soy Técnico Universitario en Programación, graduado en la UTN. Actualmente trabajo como desarrollador en la Armada Argentina, donde hace un año me desempeño creando, manteniendo y actualizando aplicaciones. Previamente, trabajé durante 2 años en el área de infraestructura, lo que me dio una visión más amplia del mundo IT.
+                        Mi objetivo es seguir creciendo en el desarrollo web, especializándome en el Front-End y en la creación de experiencias digitales modernas, intuitivas y funcionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tecnologías -->
+    <section id="tecnologias" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Tecnologías</h2>
+            <div class="tech-grid">
+                <div class="tech-card" data-tech="html">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-card" data-tech="css">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-card" data-tech="sass">
+                    <i class="fab fa-sass"></i>
+                    <span>SASS</span>
+                </div>
+                <div class="tech-card" data-tech="bootstrap">
+                    <i class="fab fa-bootstrap"></i>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="tech-card" data-tech="javascript">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-card" data-tech="react">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+
+                <div class="tech-card" data-tech="dotnet">
+                    <i class="fab fa-microsoft"></i>
+                    <span>.NET</span>
+                </div>
+
+                <div class="tech-card" data-tech="docker">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                
+                <div class="tech-card" data-tech="git">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tuusuario/proyecto1" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce App</h3>
+                        <p>Aplicación completa de comercio electrónico con carrito de compras, autenticación y panel de administración.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/tuusuario/proyecto1" class="project-btn" target="_blank">
+                            Ver Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tuusuario/proyecto2" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de control interactivo para visualización de datos con gráficos dinámicos y filtros avanzados.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <a href="https://github.com/tuusuario/proyecto2" class="project-btn" target="_blank">
+                            Ver Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tuusuario/proyecto3" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>Aplicación de gestión de tareas con funcionalidades de drag & drop, categorías y recordatorios.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <a href="https://github.com/tuusuario/proyecto3" class="project-btn" target="_blank">
+                            Ver Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tuusuario/proyecto4" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Aplicación del clima con pronóstico extendido, geolocalización y diseño responsive.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <a href="https://github.com/tuusuario/proyecto4" class="project-btn" target="_blank">
+                            Ver Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Trabajemos juntos!</h3>
+                    <p>
+                        ¿Tienes un proyecto en mente o queres colaborar? 
+                        No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades 
+                        y desafíos interesantes.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>balotluciano02@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+54 2915756380</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bahía Blanca, Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3>Mis redes sociales!</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/luchobalot" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luciano-nicolas-balot-742b19271/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luciano Nicolas Balot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
