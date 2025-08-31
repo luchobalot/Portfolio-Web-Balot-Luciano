@@ -1,0 +1,110 @@
+/* ===== MODIFICACIONES PARA LA SECCIÓN SOBRE MÍ CON AVATAR ===== */
+
+/* Modificación del layout existente */
+.about-content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Nuevos estilos para el avatar */
+.about-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 5px;
+    transition: var(--transition-medium);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.15);
+}
+
+.avatar-container::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: var(--transition-medium);
+}
+
+.avatar-container:hover::after {
+    opacity: 0.3;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--bg-tertiary);
+    border: 3px solid var(--bg-secondary);
+    transition: var(--transition-medium);
+}
+
+.avatar-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 212, 255, 0.25);
+}
+
+.avatar-container:hover .avatar-image {
+    border-color: rgba(0, 212, 255, 0.4);
+}
+
+/* Placeholder para cuando no hay imagen */
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    border: 3px solid var(--bg-secondary);
+}
+
+/* ===== RESPONSIVE MODIFICACIONES ===== */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .avatar-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Móvil */
+@media screen and (max-width: 480px) {
+    .avatar-container {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .about-content {
+        gap: 2rem;
+    }
+    
+    .avatar-placeholder {
+        font-size: 2.5rem;
+    }
+}

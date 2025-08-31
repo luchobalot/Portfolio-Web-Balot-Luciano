@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Nombre - Desarrollador Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about-avatar.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -36,7 +38,7 @@
                 Hola, soy <span class="highlight">Luciano Nicolas Balot</span>
             </h1>
             <p class="hero-subtitle">
-                Desarrollador Web especializado en el Front-End, con conocimientos en React y JavaScript, y experiencia complementaria en tecnologías Back-End en .NET y Java.
+                Desarrollador Web especializado en Front-End, con conocimientos en React y JavaScript, y experiencia complementaria en tecnologías Back-End en .NET y Java.
             </p>
             <div class="hero-buttons">
                 <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
@@ -50,18 +52,33 @@
 
     <!-- Sección Sobre mí -->
     <section id="sobre-mi" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Tengo 23 años y soy Técnico Universitario en Programación, graduado en la UTN. Actualmente trabajo como desarrollador en la Armada Argentina, donde hace un año me desempeño creando, manteniendo y actualizando aplicaciones. Previamente, trabajé durante 2 años en el área de infraestructura, lo que me dio una visión más amplia del mundo IT.
-                        Mi objetivo es seguir creciendo en el desarrollo web, especializándome en el Front-End y en la creación de experiencias digitales modernas, intuitivas y funcionales.
-                    </p>
+    <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+            <div class="about-avatar">
+                <div class="avatar-container">
+                    <!-- <img src="assets/mi-memoji.png" alt="Luciano Nicolas Balot - Memoji" class="avatar-image"> -->
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <!-- Decoraciones alrededor del avatar -->
+                    <div class="avatar-decoration decoration-1"></div>
+                    <div class="avatar-decoration decoration-2"></div>
+                    <div class="avatar-decoration decoration-3"></div>
                 </div>
             </div>
+            <div class="about-text">
+                <p>
+                    Me llamo Luciano. Tengo 23 años y soy Técnico Universitario en Programación, graduado en la UTN. Actualmente trabajo como desarrollador en la Armada Argentina, donde hace un año me desempeño creando, manteniendo y actualizando aplicaciones. Previamente, trabajé durante 2 años en el área de infraestructura, lo que me dio una visión más amplia del mundo IT.
+                </p>
+                <p>
+                    Mi objetivo es seguir creciendo en el desarrollo web, especializándome en el Front-End y en la creación de experiencias digitales modernas, intuitivas y funcionales.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección Tecnologías -->
     <section id="tecnologias" class="technologies">
