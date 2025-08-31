@@ -50,10 +50,10 @@ function updateActiveNavLink() {
 // ===== EFECTO NAVBAR AL HACER SCROLL =====
 function handleNavbarScroll() {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.7)';
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)'; // Estado inicial
         navbar.style.boxShadow = 'none';
     }
 }

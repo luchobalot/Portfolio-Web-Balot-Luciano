@@ -43,7 +43,7 @@ html {
 
 body {
     font-family: var(--font-main);
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -75,7 +75,7 @@ body {
     border-radius: 2px;
 }
 
-/* ===== NAVEGACIÃ“N ===== */
+/* ===== NAVEGACIÓN ===== */
 .navbar {
     position: fixed;
     top: 0;
